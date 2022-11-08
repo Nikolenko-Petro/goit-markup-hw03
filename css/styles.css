@@ -23,7 +23,9 @@ footer {
   background-color: #2f303a;
 }
 
-/* Logo */
+=====================
+/* Header */
+=====================
 .logo {
   color: #000000;
   text-decoration: none;
@@ -64,10 +66,14 @@ footer {
   color: var(--accent-color);
 }
 
+====================
+    /* Main */
+====================
 /* Hero */
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
   color: #ffffff;
@@ -135,7 +141,9 @@ footer {
   line-height: 1.88;
 }
 
-/* footer */
+===================
+/* Footer */
+===================
 
 .footer-text {
   color: #ffffff;
@@ -167,7 +175,13 @@ footer {
 .colorlogo {
   color: var(--accent-color);
 }
+
+
+///////////////////
 /* portfolio */
+//////////////////
+
+
 .filtres {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
