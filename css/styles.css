@@ -6,26 +6,55 @@
 
 :root {
   --primary-text-color: #212121;
+  --light-text-color: #FFFFFF;
   --title-text-color: #757575;
   --accent-color: #2196f3;
 }
+html{
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+box-sizing: inherit;
+}
 
 body {
-  background-color: #ffffff;
+  
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  background-color: var(--light-text-color);
 }
+/* reset */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  
 }
 footer {
   background-color: #2f303a;
 }
 
-=====================
-/* Header */
-=====================
+.conteiner{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==== Header ===== */
+.header{
+  padding-top: 24px;
+}
+
+.header-nav{
+  
+}
 .logo {
   color: #000000;
   text-decoration: none;
@@ -33,6 +62,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  
 }
 .colorlogo {
   color: var(--accent-color);
@@ -66,22 +96,41 @@ footer {
   color: var(--accent-color);
 }
 
-====================
-    /* Main */
-====================
-/* Hero */
 
-.hero {
-  background-color: #2f303a;
+    /* ==== Main ==== */
+
+    .section{
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+/* Hero */
+.hero{
+  background-color: #2F303A;
   text-align: center;
+  height: 600px;
+  padding: 200px;
 }
-.hero-title {
-  color: #ffffff;
+
+.hero-title{
+  color:var(--light-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding: 0;
+  
+}
+
+.hero-button{
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  
 }
 
 /* Section */
@@ -93,13 +142,19 @@ footer {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.section-title .feature {
+.feature {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
+  color: var(--primary-text-color);
 }
-
+.feature-title{
+  margin-bottom: 10px;
+  
+}
 .feature-text {
   color: var(--title-text-color);
   font-weight: 400;
@@ -111,22 +166,15 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .tc-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 }
-/* button */
-.button {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-}
+
 .project-title {
   color: var(--primary-text-color);
   font-weight: 700;
@@ -141,16 +189,20 @@ footer {
   line-height: 1.88;
 }
 
-===================
-/* Footer */
-===================
+
+/* ==== Footer ==== */
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-text {
-  color: #ffffff;
+  color: var(--light-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
 }
 .footer-connection a {
   color: rgba(255, 255, 255, 0.6);
@@ -162,14 +214,19 @@ footer {
 .footer-connection a:hover,
 .footer-connection a:focus {
   color: var(--accent-color);
+
+}
+.connection-link{
+  margin-top: 9px;
 }
 .footer-logo {
-  color: #ffffff;
+  color: var(--light-text-color);
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  
 }
 
 .colorlogo {
@@ -177,9 +234,9 @@ footer {
 }
 
 
-///////////////////
-/* portfolio */
-//////////////////
+
+/* ==== portfolio ==== */
+
 
 
 .filtres {
@@ -191,7 +248,7 @@ footer {
 }
 .filtres:hover,
 .filtres:focus {
-  color: #ffffff;
+  color: var(--light-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
