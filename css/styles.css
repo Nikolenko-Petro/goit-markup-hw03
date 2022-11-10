@@ -56,9 +56,17 @@ footer {
   margin-right: auto;
 }
 /* ==== Header ===== */
+.header-section {
+  display: flex;
+  align-items: center;
+}
 .header {
   padding-top: 24px;
+  padding-bottom: 24px;
   border: 1px solid #ececec;
+}
+.header-nav {
+  display: flex;
 }
 
 .logo {
@@ -73,7 +81,17 @@ footer {
   color: var(--accent-color);
 }
 
-.site-nav a {
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav__link {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -81,26 +99,26 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
 .site-nav .current {
   color: var(--accent-color);
 }
-.connection-nav a {
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.02em;
+.connection-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
 }
 .connection-nav a:hover,
 .connection-nav a:focus {
   color: var(--accent-color);
 }
-
+.link {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
 /* ==== Main ==== */
 
 /* Hero */
@@ -108,7 +126,10 @@ footer {
   background-color: #2f303a;
   text-align: center;
   height: 600px;
-  padding: 200px;
+  padding-top: 280px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 200px;
 }
 
 .hero-title {
@@ -151,11 +172,14 @@ footer {
   text-align: center;
   margin-bottom: 50px;
 }
+/* advantage */
 .feature {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
   color: var(--primary-text-color);
+  display: flex;
+  gap: 30px;
 }
 .feature-title {
   margin-bottom: 10px;
@@ -165,6 +189,16 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+/* examples */
+.examples-list {
+  display: flex;
+  gap: 30px;
+}
+/* section-team */
+.team-list {
+  display: flex;
+  gap: 30px;
 }
 .team-card {
   width: 270px;
@@ -245,6 +279,13 @@ footer {
 
 /* ==== portfolio ==== */
 
+.filtres-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+  justify-content: center;
+}
 .filtres {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
@@ -261,6 +302,9 @@ footer {
 }
 .project {
   margin-top: 34px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .project-title {
   color: var(--primary-text-color);
@@ -281,7 +325,7 @@ footer {
   text-decoration: none;
 }
 .portfolio-project {
-  width: 372px;
+  width: 370px;
   height: 450px;
   border: 1px solid #ececec;
 }
